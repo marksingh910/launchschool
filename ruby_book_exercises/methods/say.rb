@@ -1,5 +1,5 @@
 def say(words)
-  puts words
+  puts words + "...Newman."
 end
 
 =begin 
