@@ -1,4 +1,4 @@
-def say(words)
+def say(words="Hello.")
   puts words + "...Newman."
 end
 
@@ -11,7 +11,7 @@ puts "I'm fine."
 
 =end
 
-say("Hello.")
+say()
 say("Hi.")
 say("How are you?")
 say("I'm fine.")
