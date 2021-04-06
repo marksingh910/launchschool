@@ -8,11 +8,6 @@ first_number = gets.chomp
 puts "Please enter a postive or negative integer"
 second_number = gets.chomp
 
-
-
-
-
-
 #check first_number
 loop do
   if first_number.to_i == 0
