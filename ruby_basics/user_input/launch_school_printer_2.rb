@@ -16,5 +16,5 @@ loop do
   end
 end
 
-#return exits entire function if you do not want to continue after someone wants to quit.
+#return exits to main if you do not want to continue after someone wants to quit.
 
