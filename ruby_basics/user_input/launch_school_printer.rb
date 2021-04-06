@@ -1,6 +1,5 @@
-puts "How many output lines do you want? Enter a number >= 3:"
-
 loop do 
+  puts "How many output lines do you want? Enter a number >= 3:"
   lines = gets.chomp.to_i
   
   while lines < 3
