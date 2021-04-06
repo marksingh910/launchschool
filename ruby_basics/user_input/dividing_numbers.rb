@@ -27,5 +27,5 @@ end
 
 puts "#{numerator} / #{denominator} is #{numerator.to_i/denominator.to_i}"
 
-#Previous comment not true. I was mistaken.
+#Previous comment not true. I was mistaken. 
 
