@@ -16,8 +16,8 @@ loop do
   puts "Please enter the denominator:"
   denominator = gets.chomp
   
-  if valid_number?(denominator) != true
-    puts "Invalid input. Only intergers are allowed."
+  if valid_number?(denominator) == false
+    puts "Invalid input. Only integers are allowed."
   elsif denominator.to_i == 0 
     puts "Invalid input. A denomitator of 0 is not allowed."
   end
@@ -27,5 +27,5 @@ end
 
 puts "#{numerator} / #{denominator} is #{numerator.to_i/denominator.to_i}"
 
-# Be careful where to put conditional checks. The "break" statement will exit out of all loops and return to main, not just exit current loop.
+#Previous comment not true. I was mistaken.
 
