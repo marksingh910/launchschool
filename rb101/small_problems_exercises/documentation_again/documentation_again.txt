@@ -1,0 +1,50 @@
+Small Problems > Documentation Again Answers
+
+1. https://ruby-doc.org/core-3.0.1/File.html
+
+File::path is a class method. File#path is an instance method. Class methods are called directly from the Class
+itself. Instance methods can be applied to any instance of the class. 
+
+2. https://ruby-doc.org/stdlib-3.0.1/libdoc/date/rdoc/Date.html 
+
+Date class. Class method civil. 
+
+-4712-01-01
+2016-01-01
+2016-05-01
+2016-05-13
+
+3. https://ruby-doc.com/core/doc/syntax/calling_methods_rdoc.html#label-Default+Positional+Arguments
+
+[4, 5, 3, 6]
+
+4. https://ruby-doc.com/core/Array.html#method-i-bsearch
+
+a.bsearch {|element| element > 8}
+
+5. https://ruby-doc.com/core/Array.html#method-i-fetch
+
+IndexError
+"beats me"
+49
+
+6. Incorrect link https://ruby-doc.org/core-2.6.2/Range.html#method-i-step
+Correct link https://ruby-doc.org/core-2.5.0/Numeric.html#method-i-step
+
+5
+8
+
+7. https://ruby-doc.org/core-3.0.1/Object.html#method-i-public_methods
+
+s.public_methods(false).inspect
+
+8. https://ruby-doc.org/core-2.3.0/Array.html#method-i-sort & https://ruby-doc.org/core-2.3.0/Array.html#method-i-take
+
+a.sort.take(2)
+a.min(2)
+
+9. https://ruby-doc.org/stdlib-1.8.6/libdoc/yaml/rdoc/YAML.html#method-c-load_file
+https://ruby-doc.org/stdlib-3.0.0/libdoc/psych/rdoc/Psych.html#method-c-load_file
+
+
+
