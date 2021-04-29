@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 def repeat(string, amount)
-  amount.times {|amount| puts string}
+  amount.times { |_amount| puts string }
 end
 
 # def repeat(string, amount)
@@ -9,4 +11,4 @@ end
 #   end
 # end
 
-repeat("Hello", 3)
+repeat('Hello', 3)
