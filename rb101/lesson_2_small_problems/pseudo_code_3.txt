@@ -1,0 +1,27 @@
+A method that takes an array of integers, and returns a new array with every other element
+
+Create new, blank array or use map method.
+Iterate through every other element.
+Store only every other element.
+Print array.
+
+START
+
+Given array of integers "array".
+
+SET new_array = [] or use .map method.
+
+Iterate over every other element in array.
+Push element to new_array.
+
+PRINT new_array.
+
+END
+
+
+def every_other(array)
+  new_array = []
+  array.each_slice(2) {|element| new_array.push(element.first)}
+  new_array
+end
+

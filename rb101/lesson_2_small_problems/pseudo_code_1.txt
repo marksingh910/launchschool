@@ -1,0 +1,24 @@
+A method that returns the sum of two integers.
+
+Ask for first integer.
+Take input string and turn into integer.
+
+Ask for second integer.
+Take input string and turn into integer.
+
+Add first and second integer together.
+
+Print result of added numbers.
+
+
+START
+
+PRINT Ask for first number.
+SET num1 = gets.chomp.to_i
+
+PRINT Ask for second number.
+SET num2 = gets.chomp.to_i
+
+PRINT num1 + num2
+
+END

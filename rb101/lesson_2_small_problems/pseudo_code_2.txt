@@ -1,0 +1,14 @@
+A method that takes an array of strings, and returns a string that is all those strings concatenated together.
+
+Take in array of strings.
+Use join method.
+Return new string.
+
+START
+
+Given array of strings "array"
+
+PRINT array.join
+
+END
+
