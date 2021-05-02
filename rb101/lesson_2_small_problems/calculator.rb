@@ -29,7 +29,7 @@ end
 def operation_to_message(op)
   result = case op
            when '1'
-            'Adding'
+             'Adding'
            when '2'
              'Subtracting'
            when '3'
@@ -37,8 +37,8 @@ def operation_to_message(op)
            when '4'
              'Dividing'
            end
-          # assign answer to variable.
-   result
+  # assign answer to variable.
+  result
 end
 
 prompt(messages('welcome', 'es'))
@@ -97,7 +97,7 @@ loop do
     end
   end
 
-  prompt("#{operation_to_message(operator)}" + messages('two_numbers'))
+  prompt((operation_to_message(operator)).to_s + messages('two_numbers'))
 
   result = case operator
            when '1'
@@ -110,7 +110,7 @@ loop do
              number1.to_f() / number2.to_f()
            end
 
-  prompt(messages('result') + "#{result}")
+  prompt(messages('result') + result.to_s)
 
   prompt(messages('again'))
   answer = Kernel.gets().chomp()
