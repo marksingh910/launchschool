@@ -9,9 +9,7 @@ def calculate_loan(loan_amount, loan_in_months, monthly_interest_rate)
   loan_amount * (monthly_interest_rate / (1 - (1 + monthly_interest_rate)**(-loan_in_months)))
 end
 
-loop do
-  p messages('welcome')
-
+def get_loan_amount
   loan_amount = nil
   loop do
     p messages('loan amount')
@@ -22,7 +20,10 @@ loop do
       p messages('valid')
     end
   end
+  return loan_amount.to_i
+end
 
+def get_loan_in_months
   loan_in_months = nil
   loop do
     p messages('loan duration')
@@ -33,7 +34,10 @@ loop do
       p messages('valid')
     end
   end
+  return loan_in_months.to_i
+end
 
+def get_monthly_interest_rate
   monthly_interest_rate = nil
   loop do
     p messages('apr')
@@ -44,8 +48,17 @@ loop do
       p 'Try again - not a decimal'
     end
   end
+  return monthly_interest_rate.to_f
+end
 
-  result = calculate_loan(loan_amount.to_i, loan_in_months.to_i, monthly_interest_rate.to_f)
+loop do
+  p messages('welcome')
+
+  loan_amount = get_loan_amount
+  loan_in_months = get_loan_in_months
+  monthly_interest_rate = get_monthly_interest_rate/100  
+
+  result = calculate_loan(loan_amount, loan_in_months, monthly_interest_rate)
   p "Your monthly payment will come out to $#{format('%0.2f', result)}."
 
   p 'Quit?'
