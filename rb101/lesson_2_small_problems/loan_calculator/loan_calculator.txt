@@ -1,0 +1,38 @@
+Create a mortage/car loan calculator.
+
+Ask for loan amount.
+  Take integer or float and verify.
+Ask for APR
+  Must be float. Convert to monthly rate?
+Ask for loan duration
+  Must be integer
+    Translate years to months or ask months only?
+Compute formula.
+  m = p * (j / (1 - (1 + j)**(-n)))
+  m = monthly payment
+  p = loan amount
+  j = monthly interest rate
+  n = loan duration in months
+Display result
+Ask again?
+
+START
+
+  puts welcome message
+
+  puts Enter loan amount: (integer only)
+    validate loan_amount
+
+  puts Enter loan duration in months (integer only)
+    validate loan_duration
+
+  puts Enter monthly interest rate (float)
+    validate float
+
+  calculate result
+
+PRINT result
+
+Ask to use calculator again.
+
+END

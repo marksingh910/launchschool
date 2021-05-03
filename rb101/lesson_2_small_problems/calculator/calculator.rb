@@ -1,16 +1,8 @@
-# Ask the user for two numbers
-# Ask the user for an operation to perform
-# Perform the operation on the two numbers
-# Output the result
-
-# answer = Kernel.gets()
-# Kernel.puts(answer)
-
 require 'yaml'
 MESSAGES = YAML.load_file('calculator_messages.yml')
 LANGUAGE = 'en'
 
-def messages(message, lang= 'en')
+def messages(lang= 'en', message)
   MESSAGES[lang][message]
 end
 
@@ -37,24 +29,21 @@ def operation_to_message(op)
            when '4'
              'Dividing'
            end
-  # assign answer to variable.
   result
 end
 
-prompt(messages('welcome', 'es'))
+prompt(messages('es','welcome'))
 
-name = ''
 loop do
   name = Kernel.gets().chomp()
 
   if name.empty?()
     prompt(messages('name'))
   else
+    prompt("Hi #{name}")
     break
   end
 end
-
-prompt("Hi #{name}")
 
 loop do
   number1 = ''
@@ -81,12 +70,9 @@ loop do
     end
   end
 
-  operator_prompt = messages('operator_prompt')
-
-  prompt(operator_prompt)
+  prompt(operator_prompt = messages('operator_prompt'))
 
   operator = ''
-
   loop do
     operator = Kernel.gets().chomp()
 

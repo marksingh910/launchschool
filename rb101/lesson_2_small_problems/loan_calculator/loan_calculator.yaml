@@ -1,0 +1,10 @@
+en:
+  welcome: 'Welcome to the loan calculator!'
+  valid: 'Not a valid number. Please try again.'
+  loan amount: 'Please enter your loan amount to the nearest whole dollar.'
+  loan duration: 'Please enter loan duration in months.'
+  apr: 'Please enter the Annual Percentage Rate (APR) in decimal format.'
+  calculating: 'Calculating'
+
+es:
+  welcome: 'TANGO SUCKA HOMBRE'
