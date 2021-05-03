@@ -38,14 +38,13 @@ loop do
   loop do
     p messages('apr')
     monthly_interest_rate = gets.chomp
-    if /\d/.match(monthly_interest_rate) && /^-?\d*\.?\d*$/.match(monthly_interest_rate)
+    if /\d/.match(monthly_interest_rate) && /^-?\d*\.?\d*$/.match(monthly_interest_rate) && monthly_interest_rate != '0'
       break
     else
       p 'Try again - not a decimal'
     end
-    monthly_interest_rate /= 100
   end
-
+  
   result = calculate_loan(loan_amount.to_i, loan_in_months.to_i, monthly_interest_rate.to_f)
   p "Your monthly payment will come out to $#{format('%0.2f', result)}."
 
