@@ -44,7 +44,7 @@ loop do
       p 'Try again - not a decimal'
     end
   end
-  
+
   result = calculate_loan(loan_amount.to_i, loan_in_months.to_i, monthly_interest_rate.to_f)
   p "Your monthly payment will come out to $#{format('%0.2f', result)}."
 
