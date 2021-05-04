@@ -1,11 +1,15 @@
-def count_occurences(array)
+# frozen_string_literal: true
 
+def count_occurences(array)
+  list = Hash.new(0)
+  array.map do |element|
+    list[element] += 1
+  end
+  list
 end
 
+vehicles = %w[car car truck car SUV truck motorcycle motorcycle car truck]
 
+total_cars = count_occurences(vehicles)
 
-# vehicles = ["car", "car", "truck", "car", "SUV", "truck", "motorcylce", "motorcycle", "car", "truck"]
-vehicles = %w[car car truck car SUV truck motorcyle motocycle car truck]
-
-# count_occurences(vehicles)
-p vehicles
+total_cars.each_pair { |type, total| puts "#{type} => #{total}" }
