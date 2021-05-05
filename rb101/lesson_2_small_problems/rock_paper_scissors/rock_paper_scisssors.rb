@@ -15,6 +15,7 @@ def win?(first, second)
                 # s:        ['paper', 'lizard'],
                 # l:        ['spock', 'paper'],
                 # sp:       ['scissors', 'rock']
+                # if using abbr add abbr array ex. lizard: ['spock', 'paper', 'sp', 'p']
   }
   move_list[first.to_sym].include?(second)
 end
