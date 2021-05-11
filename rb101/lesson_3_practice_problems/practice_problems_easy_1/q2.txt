@@ -1,0 +1,20 @@
+Describe the difference between ! and ? in Ruby. And explain what would happen in the following scenarios:
+
+what is != and where should you use it?
+put ! before something, like !user_name
+put ! after something, like words.uniq!
+put ? before something
+put ? after something
+put !! before something, like !!user_name
+
+Answer:
+
+! is the bang and not character. It can be used for mutative methods. It can also give the inverse of a boolean.
+? asserts a true or false return from a method.
+
+1. != means not equal to. Used for conditionals.
+2. !variable converts to false. !false converts to true.
+3. ! after a method will make it destructive if possible.
+4. Ternary operator?
+5. Signifies method will return true or false statement. Method code determines output, not because it has a ?. 
+6. Double inverse. Returns as true.

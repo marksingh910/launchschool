@@ -1,0 +1,15 @@
+numbers = [1, 2, 2, 3]
+numbers.uniq
+
+puts numbers
+
+Answer:
+
+[1, 2, 2, 3] - incorrect
+
+1
+2
+2
+3
+
+p will output [1, 2, 2, 3]. puts will output each element on a new line.
