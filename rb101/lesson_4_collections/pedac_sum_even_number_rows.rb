@@ -8,7 +8,7 @@ p sum_even_numbers(1) == 2
 p sum_even_numbers(2) == 10
 p sum_even_numbers(3) == 30
 p sum_even_numbers(4) == 68
-
+# p sum_even_numbers(2500) 
 
 
 =begin
@@ -19,3 +19,6 @@ p sum_even_numbers(4) == 68
 4 | 14, 16, 18, 20  = 68
 
 =end
+
+# There is an efficiency problem here when you get to larger numbers ex. > 2500
+# Creating only the row that is needed more efficient
