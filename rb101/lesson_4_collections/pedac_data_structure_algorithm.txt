@@ -1,0 +1,48 @@
+PROBLEM:
+
+Given a string, write a method 'palindrome_substrings' which returns all the substrings from a given string
+which are palindromes. Consider palindrome words case senstive.
+
+Test Cases:
+
+palindrome_substrings('supercalifragilisticexpialidocious') == ['ili']
+palindrome_substrings('abcddcbA') == ['bcddcb', 'cddc', 'dd']
+palindrome_substrings('palindrome') == []
+palindrome_substrings('') == []
+
+input: string
+output: array of string elements (new array object of strings)
+rules:
+  Explicit requirements:
+    - returns all substrings from a given string which are palindromes.
+    - palindrome words are case sensitive.
+  
+  Implicit requirements:
+    - return an array of string elements.
+    - if the string does not contain a palindrome, return empty array.
+    - empty strings return empty array.
+
+Algorithm:
+  - initialize a result variable to an empty array.
+  - create an array named substring_arr that contains all of the substrings
+    of the input string that are at least two characters long.
+  - loop through the words in the substring_arr array.
+  - if the word is a palindrome, append it to the result array.
+  - return the result array.
+
+  def palindrome_substrings(str)
+    result = []
+    substrings_arr = substrings(str)
+    substrings_arr.each do |substring|
+      result << substring if is_palindrome?(substring)
+    end
+    result
+  end
+
+  substrings method:
+    - for each starting index from zero through the next to last index position
+      - for each substring length from two until there are no substrings of that length
+        - extract the substring of the indicated length starting at the indicated indexe position
+      - end of inner loop
+    - end of outer loop
+
