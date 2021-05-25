@@ -4,12 +4,12 @@ def sum_even_numbers(row)
   array[-row, row].sum
 end
 
-p sum_even_numbers(1) == 2
-p sum_even_numbers(2) == 10
-p sum_even_numbers(3) == 30
-p sum_even_numbers(4) == 68
-# p sum_even_numbers(2500) 
-
+# p sum_even_numbers(1) == 2
+# p sum_even_numbers(2) == 10
+# p sum_even_numbers(3) == 30
+# p sum_even_numbers(4) == 68
+# p sum_even_numbers(100000)
+p sum_even_numbers(10000)
 
 =begin
 
