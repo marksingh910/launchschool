@@ -13,3 +13,7 @@ vehicles = %w[car car truck car SUV truck motorcycle motorcycle car truck]
 total_cars = count_occurences(vehicles)
 
 total_cars.each_pair { |type, total| puts "#{type} => #{total}" }
+
+cars = vehicles.tally
+
+cars.each_pair { |type, total| puts "#{type} => #{total}" }
